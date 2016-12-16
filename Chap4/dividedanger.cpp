@@ -10,6 +10,6 @@
      std::cin >> dividend >> divisor;
      //  Divide them and report the result
      std::cout << dividend << "/" << divisor << " = " 
-          << dividend/divisor << '\n';
+               << dividend/divisor << '\n';
  }
 

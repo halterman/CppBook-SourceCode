@@ -25,11 +25,11 @@
      // Add up the elements
      std::cout << std::accumulate(std::begin(nums), std::end(nums), 0,
                         [](int a, int b) { return a + b; })
-          << '\n';
+               << '\n';
  
      // Multiply the elements
      std::cout << std::accumulate(std::begin(nums), std::end(nums), 1,
                         [](int a, int b) { return a * b; })
-          << '\n';
+               << '\n';
  }
 

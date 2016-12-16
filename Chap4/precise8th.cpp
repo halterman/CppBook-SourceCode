@@ -8,7 +8,7 @@
                        - one_eighth - one_eighth;
  
      std::cout << "one = " << one << ", one_eighth = " << one_eighth 
-          << ", zero = " << zero << '\n';
+               << ", zero = " << zero << '\n';
      
  }
 

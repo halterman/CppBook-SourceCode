@@ -12,8 +12,8 @@
             real2 = c2.real(),
             imag2 = c2.imag();
      std::cout << c1 << " * " << c2 << " = " 
-          << real1*real2 + imag1*real2 + real1*imag2 - imag1*imag2
-          << '\n';
+               << real1*real2 + imag1*real2 + real1*imag2 - imag1*imag2
+               << '\n';
  
      //  Use complex arithmetic
      std::cout << c1 << " * " << c2 << " = " << c1*c2 << '\n';

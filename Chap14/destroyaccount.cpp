@@ -10,8 +10,9 @@
      double balance;
  public:
      //  Initializes a bank account object
-     Account(const std::string& customer_name, int account_number, double amount): 
-                     name(name), id(account_number), balance(amount) {
+     Account(const std::string& customer_name, int account_number, 
+             double amount): name(name), id(account_number), 
+                             balance(amount) {
          std::cout << "Creating Account object #" << id << '\n';
          if (amount < 0) {
              std::cout << "Warning: negative account balance\n";
@@ -46,7 +47,7 @@
      //  Displays information about the account object
      void display() {
          std::cout << "Name: " << name << ", ID: " << id
-              << ", Balance: " << balance << '\n';
+                   << ", Balance: " << balance << '\n';
      }
  };
 

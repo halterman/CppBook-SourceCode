@@ -12,7 +12,7 @@
      clock_t start_time = clock();
      f(n);
      clock_t end_time = clock();
-     return static_cast<unsigned>(end_time - start_time);  //  Return elapsed time
+     return static_cast<unsigned>(end_time - start_time); // Return elapsed time
  }
  
  // Tests the performance of the fibonacci and fibonacci2 functions.
@@ -20,6 +20,6 @@
      auto t1 = time_it(fibonacci, 50);
      auto t2 = time_it(fibonacci2, 50);
      std::cout << "Time: " << "fibonacci = "<< t1 << " msec, fibonacci2 = " 
-          << t2 << " msec\n";
+               << t2 << " msec\n";
  }
 

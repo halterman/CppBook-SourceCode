@@ -52,7 +52,7 @@
  int main() {
      int low, high;
      std::cout << "Please enter lowest and highest values in "
-          << "the range: ";
+               << "the range: ";
      std::cin >> low >> high;
      std::vector<int> prime_list = primes(low, high);
      print(prime_list);

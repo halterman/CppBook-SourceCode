@@ -90,13 +90,13 @@
          //  Search for all the elements in list using linear search
          //  Compute running time averaged over five runs
          std::cout << std::fixed << std::setprecision(3) << std::setw(12) 
-              << time_execution(linear_search, list, 5)
-              << " sec";
+                    << time_execution(linear_search, list, 5)
+                    << " sec";
          //  Search for all the elements in list binary search
          //  Compute running time averaged over 25 runs
          std::cout << std::fixed << std::setprecision(3) << std::setw(12) 
-              << time_execution(binary_search, list, 25)
-              << " sec\n";
+                   << time_execution(binary_search, list, 25)
+                   << " sec\n";
      }
  }
 

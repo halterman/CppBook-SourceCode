@@ -30,8 +30,8 @@
      //  Print the elapsed time
      std::cout << "Count = " << count << "  ";
      std::cout << "Elapsed time: " 
-         << static_cast<double>(clock() - start_time)/CLOCKS_PER_SEC 
-         << " seconds\n";
+               << static_cast<double>(clock() - start_time)/CLOCKS_PER_SEC 
+               << " seconds\n";
  }
  
  void count_primes2() {
@@ -52,8 +52,8 @@
      //  Print the elapsed time
      std::cout << "Count = " << count << "  ";
      std::cout << "Elapsed time: " 
-         << static_cast<double>(clock() - start_time)/CLOCKS_PER_SEC 
-         << " seconds\n";
+               << static_cast<double>(clock() - start_time)/CLOCKS_PER_SEC 
+               << " seconds\n";
  }
  
  void count_primes3() {
@@ -77,8 +77,8 @@
      //  Print the elapsed time
      std::cout << "Count = " << count << "  ";
      std::cout << "Elapsed time: " 
-         << static_cast<double>(clock() - start_time)/CLOCKS_PER_SEC 
-         << " seconds\n";
+               << static_cast<double>(clock() - start_time)/CLOCKS_PER_SEC 
+               << " seconds\n";
  }
  
  int main() {

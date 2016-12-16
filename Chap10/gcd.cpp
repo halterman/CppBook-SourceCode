@@ -31,6 +31,6 @@
      for (int num1 = 1; num1 <= 100; num1++)
          for (int num2 = 1; num2 <= 100; num2++)
                  std::cout << "gcd(" << num1 << "," << num2 
-                      << ") = " << gcd(num1, num2) << '\n';
+                           << ") = " << gcd(num1, num2) << '\n';
  }
 

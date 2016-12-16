@@ -27,6 +27,6 @@
      std::cout << "-----------------\n";
      for (auto& counts: call_counter)
          std::cout << "   " << counts.first << "         " 
-              << counts.second << '\n';
+                   << counts.second << '\n';
  }
 

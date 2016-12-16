@@ -32,7 +32,8 @@
      }
      else {  // User provided file name
          std::string filename = argv[1];
-         std::vector<std::set<std::string>> groups(MAX_WORD_LENGTH); // Make a grouping map of sets
+         // Make a grouping map of sets
+         std::vector<std::set<std::string>> groups(MAX_WORD_LENGTH); 
          std::ifstream fin(filename);
          if (fin.good()) {     // Open the file for reading
              std::string word;

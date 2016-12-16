@@ -72,6 +72,6 @@
     std::cout << "Ascending:  ";
     print(vec);
     std::cout << "  (" << lt.comparisons() << " comparisons, " 
-         << lt.swaps() << " swaps)\n";
+              << lt.swaps() << " swaps)\n";
  }
 

@@ -71,8 +71,8 @@
      char command;
      while (!done) {
          std::cout << "I)nsert <item> P)rint "
-              << "S)ave <filename> L)oad <filename> "
-              << "E)rase Q)uit: ";
+                   << "S)ave <filename> L)oad <filename> "
+                   << "E)rase Q)uit: ";
          std::cin >> command;
          int value;
          std::string filename;

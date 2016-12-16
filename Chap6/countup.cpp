@@ -20,7 +20,7 @@
          //  Check for "bad" input
          if (input != 'Y' && input != 'y' && input != 'N' && input != 'n')
              std::cout << "\"" << input << "\"" 
-                  << " is not a valid choice" << '\n';
+                       << " is not a valid choice" << '\n';
          else if (input == 'Y' || input == 'y')
              count++;    //  Keep counting
          else if (input == 'N' || input == 'n')

@@ -24,6 +24,6 @@
      std::cin >> input;
      //  Report square root
      std::cout << "Square root of " << input << " = " 
-          << square_root(input) << '\n';
+               << square_root(input) << '\n';
  }
 

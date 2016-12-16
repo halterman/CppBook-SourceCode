@@ -8,7 +8,8 @@
  void populate_matrix(Matrix& m) {
      std::cout << "Enter the " << m.size() << " rows of the matrix.\n";
      for (unsigned row = 0; row < m.size(); row++) {
-         std::cout << "Row #" << row << " (enter " << m[row].size() << " values):";
+         std::cout << "Row #" << row << " (enter " << m[row].size() 
+                   << " values):";
          for (double& elem : m[row])
              std::cin >> elem;
      }

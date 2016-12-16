@@ -17,7 +17,7 @@
                            std::begin(s2), std::end(s2),
                            std::inserter(s1_inter_s2, std::end(s1_inter_s2)));
      std::cout << "Intersection of " << s1 << " and " << s2 
-          << " = " << s1_inter_s2 << '\n';
+               << " = " << s1_inter_s2 << '\n';
  
      std::cout << "\n-------------\n";
  

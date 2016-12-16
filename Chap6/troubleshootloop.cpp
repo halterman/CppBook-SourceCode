@@ -7,7 +7,7 @@
 
      while (!done) {  //  Continue until we are done
          std::cout << "Does the computer make any sounds "
-              << "(fans, etc.) or show any lights? (y/n):";
+                   << "(fans, etc.) or show any lights? (y/n):";
          std::cin >> choice;
          //   The troubleshooting control logic
          if (choice == 'n') { //  The computer does not have power
@@ -30,18 +30,18 @@
                          std::cin >> choice;
                          if (choice == 'n') { //  Fix outlet
                              std::cout << "Check the outlet's circuit "
-                                  << "breaker or fuse.  Move to a "
-                                  << "new outlet, if necessary.\n";
+                                       << "breaker or fuse.  Move to a "
+                                       << "new outlet, if necessary.\n";
                          } 
                          else { //  Beats me!
                              std::cout << "Please consult a service "
-                                  << "technician.\n";
+                                       << "technician.\n";
                              done = true;  // Exhausted simple fixes
                          }
                      } 
                      else { //  Check fuse
                          std::cout << "Check the fuse. Replace if "
-                              << "necessary.\n";
+                                   << "necessary.\n";
                      }
                  }
              }

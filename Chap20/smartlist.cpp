@@ -9,7 +9,7 @@
      //  to the LList class and inaccessible to outside this class.
      struct Node {
          T data;                      //  A data element of the list
-         std::shared_ptr<Node> next;  //  The node that follows this one in the list
+         std::shared_ptr<Node> next;  //  The node that follows this one
          //  Constructor
          Node(const T& d): data(d), next(nullptr) {
              std::cout << "Created node with value " << data << '\n';
@@ -36,16 +36,17 @@
      // Inserts value onto the back of the list.  
      // value is the element to insert.
      void insert(const T& value) {
-         if (!head)
-             head = std::make_shared<Node>(value);
-         else {
+         auto new_node = std::make_shared<Node>(value);
+         if (!head)   // Is the list empty?
+             head = new_node;
+         else {       // List not empty; search for last node 
              auto p = head;
-             while (p->next)
-                 p = p->next;  // Move to end of list
-             p->next = std::make_shared<Node>(value);
+             while (p->next)   // Stop at last viable node in the list
+                 p = p->next;  // Move to next node
+             p->next = new_node;
          }
      }
- 
+
      // Prints the contents of the linked list of integers.
      void print() const {
          for (auto p = head; p; p = p->next)

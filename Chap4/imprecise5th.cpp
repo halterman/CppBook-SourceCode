@@ -7,7 +7,7 @@
                        - one_fifth - one_fifth;
  
      std::cout << "one = " << one << ", one_fifth = " << one_fifth 
-          << ", zero = " << zero << '\n';
+               << ", zero = " << zero << '\n';
      
  }
 

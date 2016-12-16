@@ -27,7 +27,8 @@
  }
  
  //  Compare integer outcomes
- void Tester::check_equals(const std::string& msg, int expected, int actual) {
+ void Tester::check_equals(const std::string& msg, int expected, 
+                           int actual) {
      std::cout << "[" << msg << "] ";
      total_count++;   //  Count this test
      if (expected == actual)
@@ -35,7 +36,7 @@
      else {
          error_count++;  //  Count this failed test
          std::cout << "*** Failed!  Expected: " << expected 
-              << ", actual: " << actual << '\n';
+                   << ", actual: " << actual << '\n';
      }
  }
  
@@ -49,13 +50,14 @@
      else {
          error_count++;  //  Count this failed test
          std::cout << "*** Failed!  Expected: " << expected 
-              << ", actual: " << actual << '\n';
+                   << ", actual: " << actual << '\n';
      }
  }
  
  
  //  Compare string outcomes
- void Tester::check_equals(const std::string& msg, const std::vector<int>& expected, 
+ void Tester::check_equals(const std::string& msg, 
+                           const std::vector<int>& expected, 
                            const std::vector<int>& actual) {
      std::cout << "[" << msg << "] ";
      total_count++;   //  Count this test
@@ -75,8 +77,8 @@
  void Tester::report_results() const {
      std::cout << "+--------------------------------------\n";
      std::cout << "| " << total_count << " tests run, " 
-          << total_count - error_count << " passed, "
-          << error_count << " failed\n";
+               << total_count - error_count << " passed, "
+               << error_count << " failed\n";
      std::cout << "+--------------------------------------\n";
  
  }

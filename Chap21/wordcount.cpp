@@ -21,7 +21,8 @@
              std::string word;
              while (fin >> word) {
                  //  Capitalize all the letters in the word
-                 transform(std::begin(word), std::end(word), std::begin(word), toupper);
+                 transform(std::begin(word), std::end(word), std::begin(word), 
+                           ::toupper);
                  if (counters.find(word) == std::end(counters))
                      counters[word] = 1; // First occurrence, add the counter
                  else

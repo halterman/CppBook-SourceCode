@@ -34,16 +34,16 @@
      // Inserts value onto the back of the list.  
      // value is the element to insert.
      void insert(const T& value) {
-         if (!head)
-             head = new Node(value);
-         else {
+         auto new_node = new Node(value);
+         if (!head)   // Is the list empty?
+             head = new_node;
+         else {       // List not empty; search for last node 
              auto p = head;
-             while (p->next)
-                 p = p->next;  // Move to end of list
-             p->next = new Node(value);
+             while (p->next)   // Stop at last viable node in the list
+                 p = p->next;  // Move to next node
+             p->next = new_node;
          }
      }
- 
  
      // Removes all the elements in the linked list.
      void clear() {

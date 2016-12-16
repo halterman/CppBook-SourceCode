@@ -42,7 +42,7 @@
      //  Displays information about the account object
      void display() {
          std::cout << "Name: " << name << ", ID: " << id
-              << ", Balance: " << balance << '\n';
+                   << ", Balance: " << balance << '\n';
      }
  };
 

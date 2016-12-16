@@ -8,6 +8,6 @@
      std::cin >> letter;
      clock_t other = clock();      //  Record ending time
      std::cout << static_cast<double>(other - seconds)/CLOCKS_PER_SEC
-          << " seconds\n";
+               << " seconds\n";
  }
 

@@ -80,7 +80,7 @@
     std::cout << "Ascending:  ";
     print(working);
     std::cout << "  (" << lt.comparisons() << " comparisons, " 
-         << lt.swaps() << " swaps)\n";
+              << lt.swaps() << " swaps)\n";
     std::cout << "----------------------------\n";
     //  Make another copy of the original vector
     working = original;
@@ -91,7 +91,7 @@
     std::cout << "Descending: ";
     print(working);
     std::cout << "  (" << gt.comparisons() << " comparisons, " 
-         << gt.swaps() << " swaps)\n";
+              << gt.swaps() << " swaps)\n";
     std::cout << "----------------------------\n";
     //  Sort a sorted vector
     std::cout << "Before:   ";
@@ -104,6 +104,6 @@
     std::cout << "Descending: ";
     print(working);
     std::cout << "  (" << gt.comparisons() << " comparisons, " 
-         << gt.swaps() << " swaps)\n";
+              << gt.swaps() << " swaps)\n";
  }
 

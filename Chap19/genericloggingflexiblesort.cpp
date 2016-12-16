@@ -261,7 +261,7 @@
      if (!fout.good()) {
          fout.close();
          std::cout << "Could not open log file " << filename
-              << " for writing\n";
+                   << " for writing\n";
          exit(1);  //  Terminate the program
      }
  }
@@ -285,13 +285,13 @@
     std::cout << "Ascending:  ";
     print(std::begin(vec), std::end(vec));
     std::cout << "  (" << lt.comparisons() << " comparisons, " 
-         << lt.swaps() << " swaps)\n";
+              << lt.swaps() << " swaps)\n";
     LogComparer<int> gt(greater_than<int>, "downsort.log");
     selection_sort(std::begin(vec), std::end(vec), gt);
     std::cout << "Descending:  ";
     print(std::begin(vec), std::end(vec));
     std::cout << "  (" << gt.comparisons() << " comparisons, " 
-         << gt.swaps() << " swaps)\n";
+              << gt.swaps() << " swaps)\n";
 
     std::cout << "--------------------------------------\n";
 
@@ -308,13 +308,13 @@
     std::cout << "Ascending:  ";
     print(std::begin(words), std::end(words));
     std::cout << "  (" << wlt.comparisons() << " comparisons, " 
-         << wlt.swaps() << " swaps)\n";
+              << wlt.swaps() << " swaps)\n";
     LogComparer<std::string> wgt(greater_than<std::string>, "downwords.log");
     selection_sort(std::begin(words), std::end(words), wgt);
     std::cout << "Descending:  ";
     print(std::begin(words), std::end(words));
     std::cout << "  (" << wgt.comparisons() << " comparisons, " 
-         << wgt.swaps() << " swaps)\n";
+              << wgt.swaps() << " swaps)\n";
 
     std::cout << "--------------------------------------\n";
 
@@ -329,12 +329,12 @@
     std::cout << "Ascending:  ";
     print(arr, arr + 8);
     std::cout << "  (" << lt2.comparisons() << " comparisons, " 
-         << lt.swaps() << " swaps)\n";
+              << lt.swaps() << " swaps)\n";
     LogComparer<int> gt2(greater_than<int>, "downsort2.log");
     selection_sort(arr, arr + 8, gt2);
     std::cout << "Descending:  ";
     print(arr, arr + 8);
     std::cout << "  (" << gt2.comparisons() << " comparisons, " 
-         << gt.swaps() << " swaps)\n";
+              << gt.swaps() << " swaps)\n";
  }
 

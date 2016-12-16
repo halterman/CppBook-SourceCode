@@ -19,7 +19,7 @@ int get_int_range(int first, int last) {
     }
     //  Insist on values in the range first...last
     std::cout << "Please enter a value in the range "
-         << first << "..." << last << ": ";
+              << first << "..." << last << ": ";
     int in_value;   //  User input value
     bool bad_entry;
     do {
@@ -27,7 +27,7 @@ int get_int_range(int first, int last) {
         bad_entry = (in_value < first || in_value > last);
         if (bad_entry) {
             std::cout << in_value << " is not in the range "
-                 << first << "..." << last << '\n';
+                      << first << "..." << last << '\n';
             std::cout << "Please try again: ";
         }
     } 

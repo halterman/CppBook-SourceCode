@@ -23,7 +23,7 @@
      for (double d = 0.0; d < 100000.0; d += 0.0001) {
          if (!equals(square_root(d), sqrt(d), 0.001))
              std::cout << d << ": Expected " << sqrt(d) << ", but computed "
-                  << square_root(d) << '\n';
+                       << square_root(d) << '\n';
      }
  }
 

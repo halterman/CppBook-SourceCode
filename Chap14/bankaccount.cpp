@@ -33,7 +33,7 @@
      int n = accts.size();
      for (int i = 0; i < n; i++)
          std::cout << accts[i].name << "," << accts[i].id
-              << "," << accts[i].balance << '\n';
+                   << "," << accts[i].balance << '\n';
  }
 
  void swap(Account& er1, Account& er2) {

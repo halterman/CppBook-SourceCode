@@ -14,7 +14,7 @@
      //  Assign Boolean value to an integer
      int x = a, y = true;
      std::cout << "a = " << a << ", b = " << b 
-          << ", x = " << x << ", y = " << y << '\n';
+               << ", x = " << x << ", y = " << y << '\n';
      //  More mixing
      a = 1725;   //  Warning issued   
      b = -19;    //  Warning issued

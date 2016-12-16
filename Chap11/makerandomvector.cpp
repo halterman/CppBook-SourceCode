@@ -20,16 +20,16 @@
   *     size is the maximum size of the vector
   */
  void make_random(std::vector<int>& v, int size) {
-     v.clear();   //  Empties the contents of vector
-     int n = rand() % size + 1;  //  Random size for v
+     v.clear();                  // Empties the contents of vector
+     int n = rand() % size + 1;  // Random size for v
      for (int i = 0; i < n; i++) 
-         v.push_back(rand());  //  Populate with random values
+         v.push_back(rand());    // Populate with random values
  }
  
  int main() {
-     srand(2);  //  Set pseudorandom number generator seed
+     srand(2);  // Set pseudorandom number generator seed
      std::vector<int> list;
-     //  Print the contents of the vector
+     // Print the contents of the vector
      std::cout << "Vector initially: ";
      print(list);
      make_random(list, 20);

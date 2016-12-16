@@ -12,7 +12,7 @@
      //  Print column heading
      int column = 1;
      while (column <= size) {
-         std::cout << std::setw(4) << column;  //  Print heading for this column.
+         std::cout << std::setw(4) << column;  // Print heading for this column.
          column++;
      }
      std::cout << '\n';
@@ -21,23 +21,23 @@
      std::cout << "   +";
      column = 1;
      while (column <= size) {
-         std::cout << "----";               //  Print line for this column.
+         std::cout << "----";               // Print line for this column.
          column++;
      }
      std::cout << '\n';
 
      //  Print table contents
      int row = 1;
-     while (row <= size) {             //  Table has size rows.
-         std::cout << std::setw(2) << row << " |"; //  Print heading for this row.
-         int column = 1;                 //  Reset column for each row.
-         while (column <= size) {      //  Table has size columns.
-             int product = row*column;   //  Compute product
+     while (row <= size) {             // Table has size rows.
+         std::cout << std::setw(2) << row << " |"; // Print heading for row.
+         int column = 1;               // Reset column for each row.
+         while (column <= size) {      // Table has size columns.
+             int product = row*column; // Compute product
              std::cout << std::setw(4) << product; //  Display product
-             column++;                   //  Next element
+             column++;                 // Next element
          }
-         row++;                          //  Next row
-         std::cout << '\n';                   //  Move cursor to next row
+         row++;                        // Next row
+         std::cout << '\n';            // Move cursor to next row
      }
  }
 

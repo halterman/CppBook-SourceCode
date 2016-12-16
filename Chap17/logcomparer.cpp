@@ -28,7 +28,7 @@
      if (!fout.good()) {
          fout.close();
          std::cout << "Could not open log file " << filename
-              << " for writing\n";
+                   << " for writing\n";
          exit(1);  //  Terminate the program
      }
  }

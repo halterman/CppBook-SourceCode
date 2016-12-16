@@ -27,7 +27,8 @@
              case 'L':
              case 'l':
                  std::cin >> name;
-                 transform(std::begin(name), std::end(name), std::begin(name), toupper);
+                 transform(std::begin(name), std::end(name), std::begin(name),
+                           ::toupper);
                  std::cout << name << " " << contacts[name] << '\n';
                  break;
              case 'Q':

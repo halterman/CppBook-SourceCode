@@ -69,8 +69,11 @@
      };
      // Test with a primitive array of Point objects
      Point pts[] =  {{5, 3}, {0, 0}, {5, 3}, {3, 5}, {2, 1}};
-     std::cout << count_value(std::begin(pts), std::end(pts), Point{5, 3}) << '\n';
-     std::cout << count_value(std::begin(pts), std::end(pts), Point{3, 5}) << '\n';
-     std::cout << count_value(std::begin(pts), std::end(pts), Point{2, 3}) << '\n';
+     std::cout << count_value(std::begin(pts), std::end(pts), Point{5, 3})
+               << '\n';
+     std::cout << count_value(std::begin(pts), std::end(pts), Point{3, 5})
+               << '\n';
+     std::cout << count_value(std::begin(pts), std::end(pts), Point{2, 3})
+               << '\n';
  }
 

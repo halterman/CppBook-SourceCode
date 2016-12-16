@@ -20,6 +20,6 @@
      seconds = seconds % 60;
      //  Report the results
      std::cout << hours << " hr, " << minutes << " min, "
-          << seconds << " sec\n";
+               << seconds << " sec\n";
  }
 

@@ -30,13 +30,15 @@
      }
      else {  // User provided file name
          std::string filename = argv[1];
-         std::map<int, std::set<std::string>> groups; // Make a grouping map of sets
+         // Make a grouping map of sets
+         std::map<int, std::set<std::string>> groups; 
          std::ifstream fin(filename);
          if (fin.good()) {     // Open the file for reading
              std::string word;
              while (fin >> word) {
                  //  Capitalize all the letters in the word
-                 transform(std::begin(word), std::end(word), std::begin(word), toupper);
+                 transform(std::begin(word), std::end(word), std::begin(word),
+                           ::toupper);
                  //  Add word to appropriate et based on the word's length
                  groups[word.length()].insert(word);
              }

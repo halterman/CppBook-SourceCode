@@ -22,6 +22,6 @@
  int main() {
      // Compare the two ways of computing the square root
      for (double d = 1.0; d <= 10.0; d += 0.5)
-         std::cout << std::setw(7) << square_root(d) << " : " << sqrt(d) << '\n'; 
+        std::cout << std::setw(7) << square_root(d) << " : " << sqrt(d) << '\n'; 
  }
 

@@ -6,10 +6,10 @@
   */
  void increment(int x) {
     std::cout << "Beginning execution of increment, x = " 
-         << x << '\n';
+              << x << '\n';
     x++;   //  Increment x
     std::cout << "Ending execution of increment, x = " 
-         << x << '\n';
+              << x << '\n';
  }
 
  int main() {

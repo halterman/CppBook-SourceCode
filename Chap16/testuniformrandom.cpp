@@ -30,14 +30,15 @@
                  count9995++;  //  Number 9,995 generated, so count it
          }
          //  Display the number of times the program generated 5 and 9,995
-         std::cout << "Trial #" << std::setw(2) << trial << "  5: " << std::setw(6) << count5
-             << "    9995: " << std::setw(6) << count9995 << '\n';
+         std::cout << "Trial #" << std::setw(2) << trial << "  5: " 
+                   << std::setw(6) << count5
+                   << "    9995: " << std::setw(6) << count9995 << '\n';
          total5 += count5;         //  Accumulate the counts to
          total9995 += count9995;   //  average them at the end
      }
      std::cout << "-------------------\n";
      std::cout << "Averages for " << NUMBER_OF_TRIALS << " trials:  5: "
-         << std::setw(6) << total5 / NUMBER_OF_TRIALS << "  9995: "
-         << std::setw(6) << total9995 / NUMBER_OF_TRIALS << '\n';
+               << std::setw(6) << total5 / NUMBER_OF_TRIALS << "  9995: "
+               << std::setw(6) << total9995 / NUMBER_OF_TRIALS << '\n';
  }
 

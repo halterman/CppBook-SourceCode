@@ -4,7 +4,7 @@
  
  // Counts the number of occurrences of the maximum value in 
  // a nonempty vector vec
- int max(const vector<int>& vec) {
+ int max(const std::vector<int>& vec) {
      auto p = std::begin(vec);  // p points to the first element
      // Determine maximum value
      int m = *p++;         // Set m to the first element and move p

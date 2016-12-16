@@ -50,10 +50,10 @@
  int main() {
      SimpleRational fract(1, 2);  //  The fraction 1/2
      std::cout << "The fraction is " << fract.get_numerator()
-          << "/" << fract.get_denominator() << '\n';
+               << "/" << fract.get_denominator() << '\n';
      fract.set_numerator(19);
      fract.set_denominator(4);
      std::cout << "The fraction is " << fract.get_numerator()
-          << "/" << fract.get_denominator() << '\n';
+               << "/" << fract.get_denominator() << '\n';
  }
 

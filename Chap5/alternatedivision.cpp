@@ -10,7 +10,7 @@
      if (divisor != 0) {
          quotient = dividend / divisor;
          std::cout << dividend << " divided by " << divisor << " is " 
-              << quotient << '\n';
+                   << quotient << '\n';
      }
  }
 

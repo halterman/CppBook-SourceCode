@@ -23,7 +23,7 @@
      end_time = clock();
      //  Print the elapsed time
      std::cout << "Elapsed time: " 
-          << static_cast<double>(end_time - start_time)/CLOCKS_PER_SEC 
-          << " sec." << '\n';
+               << static_cast<double>(end_time - start_time)/CLOCKS_PER_SEC 
+               << " sec." << '\n';
  }
 

@@ -37,7 +37,7 @@
      std::cout << '\n';  //  Move cursor down to next line
      //  Print the elapsed time
      std::cout << "Elapsed time: " 
-         << static_cast<double>(clock() - start_time)/CLOCKS_PER_SEC 
-         << " seconds\n";
+               << static_cast<double>(clock() - start_time)/CLOCKS_PER_SEC 
+               << " seconds\n";
  }
 

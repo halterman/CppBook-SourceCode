@@ -84,7 +84,7 @@
     std::cout << "Ascending:  ";
     std::cout << working << '\n';
     std::cout << "  (" << lt.comparisons() << " comparisons, " 
-         << lt.swaps() << " swaps)\n";
+              << lt.swaps() << " swaps)\n";
     std::cout << "----------------------------\n";
     //  Make another copy of the original vector
     working = original;
@@ -94,7 +94,7 @@
     std::cout << "Descending: ";
     std::cout << working << '\n';
     std::cout << "  (" << gt.comparisons() << " comparisons, " 
-         << gt.swaps() << " swaps)\n";
+              << gt.swaps() << " swaps)\n";
     std::cout << "----------------------------\n";
 
     //  Make a vector of strings
@@ -111,7 +111,7 @@
     std::cout << "Ascending:  ";
     std::cout << str_working << '\n';
     std::cout << "  (" << str_lt.comparisons() << " comparisons, " 
-         << str_lt.swaps() << " swaps)\n";
+              << str_lt.swaps() << " swaps)\n";
     std::cout << "----------------------------\n";
     //  Make another copy of the original vector
     str_working = str_original;
@@ -121,7 +121,7 @@
     std::cout << "Descending: ";
     std::cout << str_working << '\n';
     std::cout << "  (" << str_gt.comparisons() << " comparisons, " 
-         << str_gt.swaps() << " swaps)\n";
+              << str_gt.swaps() << " swaps)\n";
     std::cout << "----------------------------\n";
  }
 
