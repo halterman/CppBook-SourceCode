@@ -8,7 +8,7 @@
  #include "uniformrandom.h"
  
  int main() {
-     const int SIZE = 250'000;
+     const int SIZE = 250000;
      // Make a vector and set 
      std::vector<int> v;
      std::set<int> s;

@@ -34,7 +34,6 @@
              fin >> value;            //  Read in a data value
              result.push_back(value); //  Append it to the vector
          }
-         fin.close();                 //  Close the file
          return result;               //  Return the populated vector
      }
      else   //  Could not open the text file

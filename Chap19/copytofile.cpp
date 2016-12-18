@@ -14,7 +14,6 @@
          auto strm = std::ostream_iterator<int>(fout, " ");
          std::copy(std::begin(vec), std::end(vec), strm);
          fout << '\n';
-         fout.close();
      }
  }
 

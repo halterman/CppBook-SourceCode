@@ -15,7 +15,6 @@
      std::ofstream fout("temp.data");
      if (fout.good()) {
          print(fout, 36);
-         fout.close();
      }
  }
 

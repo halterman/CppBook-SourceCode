@@ -259,17 +259,12 @@
                           const std::string& filename): Comparer<T>(f) {
      fout.open(filename);
      if (!fout.good()) {
-         fout.close();
          std::cout << "Could not open log file " << filename
                    << " for writing\n";
          exit(1);  //  Terminate the program
      }
- }
-
- //  Destructor closes the log file
- template <typename T>
- LogComparer<T>::~LogComparer() {
-     fout.close();
+     // fout is an instance variable, not a local variable,
+     // so the file stays open when the constructor finishes
  }
 
 

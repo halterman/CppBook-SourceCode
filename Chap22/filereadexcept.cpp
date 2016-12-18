@@ -14,7 +14,6 @@
                  fin >> value;
                  data.at(i) = value;
              }
-             fin.close();
              //  Print the values
              for (auto value : data) 
                  std::cout << value << ' ';

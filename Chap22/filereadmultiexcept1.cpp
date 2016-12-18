@@ -32,7 +32,6 @@
          int value, i = 0;      
          while (fin >> value)
              result.at(i++) = value; //  Insert it into the vector
-         fin.close();                //  Close the file
          return result;              //  Return the populated vector
      }
      else   //  Could not open the text file

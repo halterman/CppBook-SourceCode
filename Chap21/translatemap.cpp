@@ -17,7 +17,6 @@
          std::string english_word, spanish_word;
          while (in >> spanish_word >> english_word) // Read until end of file
              words[spanish_word] = english_word;
-         in.close();
      }
      else
          std::cout << "Unable to load in the file\n";

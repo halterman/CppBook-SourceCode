@@ -30,14 +30,13 @@
   *    function.
   */
  void save_vector(const std::string& filename, const std::vector<int>& vec) {
-     std::ofstream out;
-     out.open(filename);
+     // Open a text file for writing
+     std::ofstream out(filename);
      if (out.good()) {  //  Make sure the file was opened properly
          int n = vec.size();
          for (int i = 0; i < n;  i++)
              out << vec[i] << " ";   //  Space delimited
          out << '\n';
-         out.close();
      }
      else
          std::cout << "Unable to save the file\n";
@@ -52,14 +51,13 @@
   *    v is a vector holding integers.
   */
  void load_vector(const std::string& filename, std::vector<int>& vec) {
-     std::ifstream in;
-     in.open(filename);
+     // Open a text file for reading
+     std::ifstream in(filename);
      if (in.good()) {  //  Make sure the file was opened properly
          vec.clear();  //  Start with empty vector
          int value;
          while (in >> value)  //  Read until end of file
              vec.push_back(value);
-         in.close();
      }
      else
          std::cout << "Unable to load in the file\n";

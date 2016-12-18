@@ -30,7 +30,6 @@
              ch = 'A';
              for (auto count : counters)
                  std::cout << ch++ << ": " << count << '\n';
-             fin.close();
          }
      }
  }
