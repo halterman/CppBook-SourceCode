@@ -30,20 +30,20 @@
  void selection_sort(std::vector<int>& a, bool (*compare)(int, int)) {
      int n = a.size();
      for (int i = 0;  i < n - 1;  i++) {
-         //  Note: i,small, and j represent positions within a
-         //  a[i], a[small], and a[j] represents the elements at
-         //  those positions.
-         //  small is the position of the smallest value we've seen
-         //  so far; we use it to find the smallest value less 
-         //  than a[i]
+         // Note: i,small, and j represent positions within a
+         // a[i], a[small], and a[j] represents the elements at
+         // those positions.
+         // small is the position of the smallest value we've seen
+         // so far; we use it to find the smallest value less 
+         // than a[i]
          int small = i;  
-         //  See if a smaller value can be found later in the vector
+         // See if a smaller value can be found later in the vector
          for (int j = i + 1;  j < n;  j++)
              if (compare(a[j], a[small]))
-                 small = j;  //  Found a smaller value
-         //  Swap a[i] and a[small], if a smaller value was found
+                 small = j;  // Found a smaller value
+         // Swap a[i] and a[small], if a smaller value was found
          if (i != small)
-             std::swap(a[i], a[small]);  //  Uses std::swap
+             std::swap(a[i], a[small]);  // Uses std::swap
      }
  }
 
@@ -57,9 +57,9 @@
      int n = a.size();
      std::cout << '{';
      if (n > 0) {
-         std::cout << a[0];  //  Print the first element
+         std::cout << a[0];  // Print the first element
          for (int i = 1; i < n; i++)
-             std::cout << ',' << a[i];  //  Print the rest
+             std::cout << ',' << a[i];  // Print the rest
      }
      std::cout << '}';
  }

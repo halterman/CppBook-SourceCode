@@ -7,14 +7,14 @@
          std::ifstream fin("data.dat");
          if (fin.good()) {
              int n;
-             fin >> n;   //  Size of dataset
-             std::vector<int> data(n);  //  Allocate vector
-             for (int i = 0; i <= n; i++ ) { //  Error: should be <
+             fin >> n;   // Size of dataset
+             std::vector<int> data(n);  // Allocate vector
+             for (int i = 0; i <= n; i++ ) { // Error: should be <
                  int value;
                  fin >> value;
                  data.at(i) = value;
              }
-             //  Print the values
+             // Print the values
              for (auto value : data) 
                  std::cout << value << ' ';
              std::cout << '\n';

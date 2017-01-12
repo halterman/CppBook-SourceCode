@@ -1,4 +1,4 @@
- //  File file_io.cpp
+ // File file_io.cpp
  
  #include <iostream>
  #include <fstream>
@@ -16,7 +16,7 @@
      if (len > 0) {
          for (int i = 0; i < len - 1;  i++)
              std::cout << vec[i] << ",";  // Comma after elements
-         std::cout << vec[len - 1];  //  No comma after last element
+         std::cout << vec[len - 1];  // No comma after last element
      }
      std::cout << "}\n";
  }
@@ -32,10 +32,10 @@
  void save_vector(const std::string& filename, const std::vector<int>& vec) {
      // Open a text file for writing
      std::ofstream out(filename);
-     if (out.good()) {  //  Make sure the file was opened properly
+     if (out.good()) {  // Make sure the file was opened properly
          int n = vec.size();
          for (int i = 0; i < n;  i++)
-             out << vec[i] << " ";   //  Space delimited
+             out << vec[i] << " ";   // Space delimited
          out << '\n';
      }
      else
@@ -53,10 +53,10 @@
  void load_vector(const std::string& filename, std::vector<int>& vec) {
      // Open a text file for reading
      std::ifstream in(filename);
-     if (in.good()) {  //  Make sure the file was opened properly
-         vec.clear();  //  Start with empty vector
+     if (in.good()) {  // Make sure the file was opened properly
+         vec.clear();  // Start with empty vector
          int value;
-         while (in >> value)  //  Read until end of file
+         while (in >> value)  // Read until end of file
              vec.push_back(value);
      }
      else

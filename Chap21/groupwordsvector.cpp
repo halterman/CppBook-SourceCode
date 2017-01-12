@@ -1,4 +1,4 @@
- //  Uses a vector to group words in a document by their length.
+ // Uses a vector to group words in a document by their length.
  
  #include <iostream>
  #include <fstream>
@@ -38,10 +38,10 @@
          if (fin.good()) {     // Open the file for reading
              std::string word;
              while (fin >> word) {
-                 //  Capitalize all the letters in the word
+                 // Capitalize all the letters in the word
                  std::transform(std::begin(word), std::end(word), 
                                 std::begin(word), toupper);
-                 //  Add word to appropriate et based on the word's length
+                 // Add word to appropriate et based on the word's length
                  if (word.length() > MAX_WORD_LENGTH)
                      std::cout << "Ignoring word, too long" << '\n';
                  groups[word.length()].insert(word);

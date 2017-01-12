@@ -19,8 +19,8 @@
   */
  void recursive_print(const int *a, int n) {
      if (n > 0) {
-         std::cout << *a << ' ';   //  Print the first element of the array
-         recursive_print(a + 1, n - 1);  //  Print rest of the array
+         std::cout << *a << ' ';   // Print the first element of the array
+         recursive_print(a + 1, n - 1);  // Print rest of the array
      }
  }
 

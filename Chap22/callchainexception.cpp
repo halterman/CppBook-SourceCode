@@ -2,7 +2,7 @@
  #include <vector>
  #include <string>
  
- //  Used to keep track of object creation and destruction
+ // Used to keep track of object creation and destruction
  class Tracker {
      std::string name;
    public:
@@ -17,14 +17,14 @@
  
  bool find(const std::vector<int>& v, int lower, int upper) {
      std::cout << "------[Entering find]------\n";
-     Tracker obj("find");  //  Local tracking object
-     bool result = false;  //  Not there by default
-     int seek;             //  What to look for
+     Tracker obj("find");  // Local tracking object
+     bool result = false;  // Not there by default
+     int seek;             // What to look for
      std::cout << "Enter item to locate:  ";
      std::cin >> seek;
      for (int i = lower; i < upper; i++)
          if (v.at(i) == seek) {
-             result = true;   //  Found it
+             result = true;   // Found it
              break;
          }
      std::cout << "------[Leaving find]------\n";
@@ -33,7 +33,7 @@
  
  void process(const std::vector<int>& v) {
      std::cout << "------[Entering process]------\n";
-     Tracker obj("process");  //  Local tracking object
+     Tracker obj("process");  // Local tracking object
      int low, high;
      std::cout << "Enter a range: ";
      std::cin >> low >> high;
@@ -45,12 +45,12 @@
  
  }
  
- //  Global tracking object
+ // Global tracking object
  Tracker obj("global");
  
  int main() {
      std::cout << "------[Entering main]------\n";
-     Tracker obj("main");  //  Local tracking object
+     Tracker obj("main");  // Local tracking object
      std::vector<int> nums { 11, 42, 23 };
      try {
          process(nums);

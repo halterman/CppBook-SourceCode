@@ -16,7 +16,7 @@
              std::cout << "* For loop terminated prematurely\n";
              std::cout << "* when i = " << i << '\n';
              std::cout << "********************************\n";
-             throw ex;  //  Rethrow the same exception
+             throw ex;  // Rethrow the same exception
          }
      }
  }

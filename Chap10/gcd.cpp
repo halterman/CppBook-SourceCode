@@ -16,9 +16,9 @@
  }
 
  int iterative_gcd(int num1, int num2) {
-     //  Determine the smaller of num1 and num2
+     // Determine the smaller of num1 and num2
      int min = (num1 < num2) ? num1 : num2;
-     //  1 is definitely a common factor to all ints
+     // 1 is definitely a common factor to all ints
      int largestFactor = 1;  
      for (int i = 1;  i <= min;  i++) 
          if (num1 % i == 0 && num2 % i == 0) 
@@ -27,7 +27,7 @@
  }
 
  int main() {
-     //  Try out the gcd function
+     // Try out the gcd function
      for (int num1 = 1; num1 <= 100; num1++)
          for (int num2 = 1; num2 <= 100; num2++)
                  std::cout << "gcd(" << num1 << "," << num2 

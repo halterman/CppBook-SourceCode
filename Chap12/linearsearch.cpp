@@ -13,8 +13,8 @@
      int n = a.size();
      for (int i = 0;  i < n;  i++)
          if (a[i] == seek)
-             return i;   //  Return position immediately
-     return -1;  //  Element not found
+             return i;   // Return position immediately
+     return -1;  // Element not found
  }
 
  /*
@@ -24,7 +24,7 @@
   */
  void format(int i) {
      if (i > 9999) 
-         std::cout << "****" << '\n';  //  Too big!
+         std::cout << "****" << '\n';  // Too big!
      else
          std::cout << std::setw(4) << i;
  }
@@ -51,9 +51,9 @@
  void display(const std::vector<int>& a, int value) {
      int position = locate(a, value);
      if (position >= 0) {
-         print(a);                   //  Print contents of the vector
+         print(a);                   // Print contents of the vector
          std::cout << '\n';
-         position = 4*position + 7;  //  Compute spacing for arrow
+         position = 4*position + 7;  // Compute spacing for arrow
          std::cout << std::setw(position);
          std::cout << "   ^   " << '\n';
          std::cout << std::setw(position);

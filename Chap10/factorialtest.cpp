@@ -13,7 +13,7 @@
  }
 
  int main() {
-     //  Try out the factorial function
+     // Try out the factorial function
      std::cout << " 0! = " << factorial(0) << '\n';
      std::cout << " 1! = " << factorial(1) << '\n';
      std::cout << " 6! = " << factorial(6) << '\n';

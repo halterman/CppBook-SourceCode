@@ -2,10 +2,10 @@
  
  int main() {
      int value;
-     //  Get number from the user
+     // Get number from the user
      std::cout << "Please enter an integer value in the range 0...1023: ";
      std::cin >> value;
-     //  Integer must be less than 1024
+     // Integer must be less than 1024
      if (0 <= value &&  value < 1024)  {
          std::cout << value/512;
          value %= 512;

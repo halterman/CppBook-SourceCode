@@ -5,7 +5,7 @@
  // calls to the fibonacci function.
  std::map<int, int> call_counter;
  
- //  Returns the nth Fibonacci number
+ // Returns the nth Fibonacci number
  int fibonacci(int n) {
      // Count the call
      call_counter[n]++;

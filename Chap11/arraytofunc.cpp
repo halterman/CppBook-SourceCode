@@ -27,16 +27,16 @@
  
  int main() {
      int list[] = { 2, 4, 6, 8 }; 
-     //  Print the contents of the array
+     // Print the contents of the array
      print(list, 4);
-     //  Compute and display sum
+     // Compute and display sum
      std::cout << sum(list, 4) << '\n';
-     //  Zero out all the elements of list
+     // Zero out all the elements of list
      for (int i = 0; i < 4; i++)
          list[i] = 0;
-     //  Reprint the contents of the array
+     // Reprint the contents of the array
      print(list, 4);
-     //  Compute and display sum
+     // Compute and display sum
      std::cout << sum(list, 4) << '\n';
  }
 

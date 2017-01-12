@@ -1,7 +1,7 @@
  #include <iostream>
 
  int main() {
-     //  Compute some products
+     // Compute some products
      int op1 = 2;
      while (op1 < 100) {
          int op2 = 2; 

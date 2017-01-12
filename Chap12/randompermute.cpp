@@ -12,9 +12,9 @@
      int n = a.size();
      std::cout << "{";
      if (n > 0) {
-         std::cout << a[0];  //  Print the first element
+         std::cout << a[0];  // Print the first element
          for (int i = 1; i < n; i++)
-             std::cout << ',' << a[i];  //  Print the rest
+             std::cout << ',' << a[i];  // Print the rest
      }
      std::cout << "}";
  }
@@ -39,8 +39,8 @@
  void permute(std::vector<int>& a) {
      int n = a.size();
      for (int i = 0; i < n - 1; i++) {   
-         //  Select a pseudorandom location from the current
-         //  location to the end of the collection
+         // Select a pseudorandom location from the current
+         // location to the end of the collection
          std::swap(a[i], a[random(i, n)]);
      }
  }
@@ -48,19 +48,19 @@
  // Tests the permute function that randomly permutes the
  // contents of a vector
  int main() {
-     //  Initialize random generator seed
+     // Initialize random generator seed
      srand(static_cast<int>(time(0)));
  
-     //  Make the vector {1,2,3,4,5,6,7,8}
+     // Make the vector {1,2,3,4,5,6,7,8}
      std::vector<int> vec { 1, 2, 3, 4, 5, 6, 7, 8 };
  
-     //  Print vector before
+     // Print vector before
      print(vec);
      std::cout << '\n';
  
      permute(vec);
      
-     //  Print vector after
+     // Print vector after
      print(vec);
      std::cout << '\n';
  }

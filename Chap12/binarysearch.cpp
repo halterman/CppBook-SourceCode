@@ -11,19 +11,19 @@
   *       seek is the element to find.
   */
  int binary_search(const std::vector<int>& a, int seek) {
-     int first = 0,            //  Initially the first position
-         last = a.size() - 1,  //  Initially the last position
-         mid;                  //  The middle of the vector
+     int first = 0,            // Initially the first position
+         last = a.size() - 1,  // Initially the last position
+         mid;                  // The middle of the vector
      while (first <= last) {
          mid = first + (last - first + 1)/2;
          if (a[mid] == seek)
-             return mid;       //  Found it
+             return mid;       // Found it
          else if (a[mid] > seek)
-             last = mid - 1;   //  continue with 1st half
-         else  //  a[mid] < seek
-             first = mid + 1;  //  continue with 2nd half
+             last = mid - 1;   // continue with 1st half
+         else  // a[mid] < seek
+             first = mid + 1;  // continue with 2nd half
      }
-     return -1;    //  Not there
+     return -1;    // Not there
  }
 
  /*
@@ -33,7 +33,7 @@
   */
  void format(int i) {
      if (i > 9999) 
-         std::cout << "****\n";  //  Too big!
+         std::cout << "****\n";  // Too big!
      else
          std::cout << std::setw(4) << i;
  }
@@ -60,9 +60,9 @@
  void display(const std::vector<int>& a, int value) {
      int position = binary_search(a, value);
      if (position >= 0) {
-         print(a);                   //  Print contents of the vector
+         print(a);                   // Print contents of the vector
          std::cout << '\n';
-         position = 4*position + 7;  //  Compute spacing for arrow
+         position = 4*position + 7;  // Compute spacing for arrow
          std::cout << std::setw(position);
          std::cout << "   ^   " << '\n';
          std::cout << std::setw(position);
@@ -79,8 +79,8 @@
  }
 
  int main() {
-    //  Check binary search on even- and odd-length vectors and
-    //  an empty vector
+    // Check binary search on even- and odd-length vectors and
+    // an empty vector
     std::vector<int> even_list{ 1, 2, 3, 4, 5, 6, 7, 8 },
                 odd_list{ 1, 2, 3, 4, 5, 6, 7, 8, 9 },
                 empty_list;

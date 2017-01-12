@@ -25,11 +25,11 @@
  
  int main() {
      int list[] = { 2, 4, 6, 8 }; 
-     //  Print the contents of the array
+     // Print the contents of the array
      print(list, 4);
-     //  Zero out the array
+     // Zero out the array
      clear(list, 4);
-     //  Reprint the contents of the array
+     // Reprint the contents of the array
      print(list, 4);
  }
 

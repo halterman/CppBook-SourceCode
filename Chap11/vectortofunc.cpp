@@ -28,17 +28,17 @@
  
  int main() {
      std::vector<int> list{ 2, 4, 6, 8, };
-     //  Print the contents of the vector
+     // Print the contents of the vector
      print(list);
-     //  Compute and display sum
+     // Compute and display sum
      std::cout << sum(list) << '\n';
-     //  Zero out all the elements of list
+     // Zero out all the elements of list
      int n = list.size();
      for (int i = 0; i < n; i++)
          list[i] = 0;
-     //  Reprint the contents of the vector
+     // Reprint the contents of the vector
      print(list);
-     //  Compute and display sum
+     // Compute and display sum
      std::cout << sum(list) << '\n';
  }
 

@@ -1,7 +1,7 @@
  #include <iostream>
 
  int main() {
-     int count = 1;              //  Initialize counter
+     int count = 1;              // Initialize counter
  top:
      if (count > 5) 
          goto end;
@@ -9,6 +9,6 @@
      count++;                // Increment counter
      goto top;
  end:
-     ;   //  Target is an empty statement
+     ;   // Target is an empty statement
  }
 

@@ -7,24 +7,24 @@
 
 
  int main() {
-     char input;         //  The users choice
-     int count = 0;      //  The current count
-     bool done = false;  //  We are not done
+     char input;         // The users choice
+     int count = 0;      // The current count
+     bool done = false;  // We are not done
 
      while (!done) {
 
-         //  Print the current value of count
+         // Print the current value of count
          std::cout << count << '\n';
          std::cout << "Please enter \"Y\" to continue or \"N\" to quit: ";
          std::cin >> input;
-         //  Check for "bad" input
+         // Check for "bad" input
          if (input != 'Y' && input != 'y' && input != 'N' && input != 'n')
              std::cout << "\"" << input << "\"" 
                        << " is not a valid choice" << '\n';
          else if (input == 'Y' || input == 'y')
-             count++;    //  Keep counting
+             count++;    // Keep counting
          else if (input == 'N' || input == 'n')
-             done = true;  //  Quit the loop
+             done = true;  // Quit the loop
      }
  } 
 

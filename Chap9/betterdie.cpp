@@ -7,7 +7,7 @@
   *     Initializes the randomness of the die
   */
  void initialize_die() {
-     //  Set the random seed value
+     // Set the random seed value
      srand(static_cast<unsigned>(time(0)));
  }
 
@@ -71,10 +71,10 @@
   */
  int main() {
 
-     //  Initialize the die
+     // Initialize the die
      initialize_die();
 
-     //  Roll the die three times
+     // Roll the die three times
      for (int i = 0; i < 3; i++)
          show_die(roll());
  }

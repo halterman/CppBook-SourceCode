@@ -16,8 +16,8 @@
  int main() {
      int value1, value2, sum;
      std::cout << "This program adds together two integers.\n";
-     value1 = prompt();    //  Call the function
-     value2 = prompt();    //  Call the function again
+     value1 = prompt();    // Call the function
+     value2 = prompt();    // Call the function again
      sum = value1 + value2;
      std::cout << value1 << " + " << value2 << " = " << sum << '\n';
  }

@@ -1,5 +1,5 @@
- //  Uses a map to count the number of occurrences of each
- //  word in a text file. 
+ // Uses a map to count the number of occurrences of each
+ // word in a text file. 
  
  #include <iostream>
  #include <fstream>
@@ -20,7 +20,7 @@
          if (fin.good()) {     // Open the file for reading
              std::string word;
              while (fin >> word) {
-                 //  Capitalize all the letters in the word
+                 // Capitalize all the letters in the word
                  transform(std::begin(word), std::end(word), std::begin(word), 
                            ::toupper);
                  if (counters.find(word) == std::end(counters))

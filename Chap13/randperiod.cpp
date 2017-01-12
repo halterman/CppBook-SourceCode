@@ -4,10 +4,10 @@
  #include <ctime>
  
  int main() {
-     //  Set random number seed value
+     // Set random number seed value
      srand(42);
  
-     //  Need to use numbers larger than regular integers; use long long ints
+     // Need to use numbers larger than regular integers; use long long ints
      for (long long i = 1; i < 4294967400LL; i++) {
         int r = rand();
         if (1 <= i && i <= 10)

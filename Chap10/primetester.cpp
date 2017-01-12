@@ -14,7 +14,7 @@
      std::cin >> max_value;
      for (int value = 2; value <= max_value; value++) 
          if (is_prime(value)) // See if value is prime
-             std::cout << value <<  " "; //  Display the prime number
-     std::cout << '\n';  //  Move cursor down to next line
+             std::cout << value <<  " "; // Display the prime number
+     std::cout << '\n';  // Move cursor down to next line
  }
 

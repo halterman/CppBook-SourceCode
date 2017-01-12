@@ -1,6 +1,6 @@
  #include <iostream>
  #include <vector>
- #include <cstdlib>   //  For rand
+ #include <cstdlib>   // For rand
 
  /*
   *  print(v)

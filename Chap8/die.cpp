@@ -3,16 +3,16 @@
  #include <ctime>
 
  int main() {
-     //  Set the random seed value
+     // Set the random seed value
      srand(static_cast<unsigned>(time(0)));
 
-     //  Roll the die three times
+     // Roll the die three times
      for (int i = 0; i < 3; i++) {
-         //  Generate random number in the range 1...6
+         // Generate random number in the range 1...6
          int value = rand() % 6 + 1;
 
 
-         //  Show the die
+         // Show the die
          std::cout <<  "+-------+\n";
          switch (value) {
            case 1:

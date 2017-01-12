@@ -6,7 +6,7 @@
      while (true) { 
          std::cin >> input;
          if (input < 0)
-             break;       //  Exit loop immediately
+             break;       // Exit loop immediately
          sum += input;
      }
      std::cout << "Sum = " << sum << '\n';

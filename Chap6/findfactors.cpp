@@ -1,7 +1,7 @@
  #include <iostream>
 
  int main() {
-     //  List of the factors of the numbers up to 20
+     // List of the factors of the numbers up to 20
      int n = 1;
      const int MAX = 20;
      while (n <= MAX) {
@@ -12,7 +12,7 @@
                  std::cout << factor << " ";
                  factor++;
              }
-         std::cout << '\n';  //  Go to next line for next n
+         std::cout << '\n';  // Go to next line for next n
          n++;
      }
  }

@@ -27,9 +27,9 @@
   *     Returns the character entered by the user.
   */
  char menu() {
-     //  Display a menu
+     // Display a menu
      std::cout << "=== A)dd S)ubtract P)rint H)elp Q)uit ===\n";
-     //  Return the char entered by user
+     // Return the char entered by user
      char ch;
      std::cin >> ch;
      return ch;
@@ -42,29 +42,29 @@
   */
  int main() {
      double result = 0.0, arg1, arg2;
-     bool done = false;  //  Initially not done
+     bool done = false;  // Initially not done
      do {
          switch (menu()) {
-           case 'A':     //  Addition
+           case 'A':     // Addition
            case 'a':
              std::cin >> arg1 >> arg2;
              result = arg1 + arg2;
              std::cout << result << '\n';
              break;
-           case 'S':     //  Subtraction
+           case 'S':     // Subtraction
            case 's':
              std::cin >> arg1 >> arg2;
              result = arg1 - arg2;
-             //  Fall through, so it prints the result
-           case 'P':     //  Print result
+             // Fall through, so it prints the result
+           case 'P':     // Print result
            case 'p':
              std::cout << result << '\n';
              break;
-           case 'H':     //  Display help screen
+           case 'H':     // Display help screen
            case 'h':
              help_screen();
              break;
-           case 'Q':     //  Quit the program
+           case 'Q':     // Quit the program
            case 'q':
              done = true;
              break;

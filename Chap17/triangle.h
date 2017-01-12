@@ -1,4 +1,4 @@
- //  File triangle.h
+ // File triangle.h
  
  #ifndef TRIANGLE_H_
  #define TRIANGLE_H_
@@ -7,7 +7,7 @@
  
  class Triangle: public Shape {
  protected:
-     double side1;   //  Triangles have three sides
+     double side1;   // Triangles have three sides
      double side2;
      double side3;
  public:

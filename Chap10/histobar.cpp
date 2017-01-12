@@ -1,7 +1,7 @@
  #include <iostream>
  
- //  Draws a bar n segments long
- //  using iteration.
+ // Draws a bar n segments long
+ // using iteration.
  void segments1(int n) {
      while (n > 0) {
          std::cout << "*";
@@ -10,8 +10,8 @@
      std::cout << '\n';
  }
  
- //  Draws a bar n segments long
- //  using recursion.
+ // Draws a bar n segments long
+ // using recursion.
  void segments2(int n) {
      if (n > 0) {
          std::cout << "*";

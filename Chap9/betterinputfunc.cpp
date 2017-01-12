@@ -10,17 +10,17 @@
   *     Returns an acceptable value from the user
   */
 int get_int_range(int first, int last) {
-    //  If the larger number is provided first, 
-    //  switch the parameters
+    // If the larger number is provided first, 
+    // switch the parameters
     if (first > last) {
         int temp = first;
         first = last;
         last = temp;
     }
-    //  Insist on values in the range first...last
+    // Insist on values in the range first...last
     std::cout << "Please enter a value in the range "
               << first << "..." << last << ": ";
-    int in_value;   //  User input value
+    int in_value;   // User input value
     bool bad_entry;
     do {
         std::cin >> in_value;
@@ -32,7 +32,7 @@ int get_int_range(int first, int last) {
         }
     } 
     while (bad_entry);
-    //  in_value at this point is guaranteed to be within range
+    // in_value at this point is guaranteed to be within range
     return in_value;
 }
 

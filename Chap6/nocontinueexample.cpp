@@ -14,7 +14,7 @@
                  sum += input;
              } 
              else
-                 done = (input == 999);  //  999 entry exits loop
+                 done = (input == 999);  // 999 entry exits loop
      }
      std::cout << "sum = " << sum << '\n';
  }

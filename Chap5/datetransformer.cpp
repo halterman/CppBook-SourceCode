@@ -4,7 +4,7 @@
      std::cout << "Please enter the month and day as numbers: ";
      int month, day;
      std::cin >> month >> day;
-     //  Translate month into English
+     // Translate month into English
      if (month == 1) 
          std::cout << "January";
      else if (month == 2) 
@@ -29,9 +29,9 @@
          std::cout << "November";
      else 
          std::cout << "December";
-     //  Add the day
+     // Add the day
      std::cout << " " << day << " or " << day << " de ";
-     //  Translate month into Spanish
+     // Translate month into Spanish
      if (month == 1)
          std::cout << "enero";
      else if (month == 2)

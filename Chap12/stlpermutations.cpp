@@ -11,9 +11,9 @@
      int n = a.size();
      std::cout << "{";
      if (n > 0) {
-         std::cout << a[0];  //  Print the first element
+         std::cout << a[0];  // Print the first element
          for (int i = 1; i < n; i++)
-             std::cout << ',' << a[i];  //  Print the rest
+             std::cout << ',' << a[i];  // Print the rest
      }
      std::cout << "}";
  }
@@ -25,7 +25,7 @@
      do {
          print(nums);
          std::cout << '\n';
-     }   //  Compute the next ordering of elements
+     }   // Compute the next ordering of elements
      while (next_permutation(begin(nums), std::end(nums)));
  }
 

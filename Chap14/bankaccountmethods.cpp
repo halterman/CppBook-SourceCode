@@ -3,14 +3,14 @@
  #include <string>
 
  class Account {
-     //  String representing the name of the account's owner
+     // String representing the name of the account's owner
      std::string name;  
-     //  The account number
+     // The account number
      int id;            
-     //  The current account balance
+     // The current account balance
      double balance;
  public:
-     //  Initializes a bank account object
+     // Initializes a bank account object
      Account(const std::string& customer_name, int account_number, 
              double amount):
              name(customer_name), id(account_number), balance(amount) {
@@ -20,26 +20,26 @@
         }
      }
 
-     //  Adds amount amt to the account's balance.
+     // Adds amount amt to the account's balance.
      void deposit(double amt) {
          balance += amt;
      }
 
-     //  Deducts amount amt from the account's balance, 
-     //  if possible.
-     //  Returns true if successful; otherwise, it returns false.
-     //  A call can fail if the withdraw would
-     //  cause the balance to fall below zero
+     // Deducts amount amt from the account's balance, 
+     // if possible.
+     // Returns true if successful; otherwise, it returns false.
+     // A call can fail if the withdraw would
+     // cause the balance to fall below zero
      bool withdraw(double amt) {
-         bool result = false;  //  Unsuccessful by default
+         bool result = false;  // Unsuccessful by default
          if (balance - amt >= 0) {
              balance -= amt;
-             result = true;  //  Success
+             result = true;  // Success
          }
          return result;
      }
 
-     //  Displays information about the account object
+     // Displays information about the account object
      void display() {
          std::cout << "Name: " << name << ", ID: " << id
                    << ", Balance: " << balance << '\n';

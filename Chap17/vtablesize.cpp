@@ -1,6 +1,6 @@
  #include <iostream>
  
- //  A class with no virtual methods
+ // A class with no virtual methods
  class NoVTable {
      int data;
  public:
@@ -8,7 +8,7 @@
      int get() { return data; }
  };
  
- //  A class with virtual methods
+ // A class with virtual methods
  class HasVTable {
      int data;
  public:

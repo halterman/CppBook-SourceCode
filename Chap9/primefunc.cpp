@@ -10,8 +10,8 @@
  bool is_prime(int n) {
      bool result = true;  // Provisionally, n is prime
      double r = n, root = sqrt(r);
-     //  Try all possible factors from 2 to the square
-     //  root of n
+     // Try all possible factors from 2 to the square
+     // root of n
      for (int trial_factor = 2; 
            result && trial_factor <= root; trial_factor++)
          result = (n % trial_factor != 0);
@@ -31,7 +31,7 @@
      std::cin >> max_value;
      for (int value = 2; value <= max_value; value++) 
          if (is_prime(value)) // See if value is prime
-             std::cout << value <<  " "; //  Display the prime number
-     std::cout << '\n';  //  Move cursor down to next line
+             std::cout << value <<  " "; // Display the prime number
+     std::cout << '\n';  // Move cursor down to next line
  }
 

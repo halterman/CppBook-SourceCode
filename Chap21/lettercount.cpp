@@ -1,5 +1,5 @@
- //  Counts the number of occurrences of each
- //  letter in a text file. 
+ // Counts the number of occurrences of each
+ // letter in a text file. 
  
  #include <iostream>
  #include <fstream>
@@ -20,7 +20,7 @@
          if (fin.good()) {     // Open the file for reading
              char ch;
              while (fin >> ch) {
-                 //  Capitalize the letter
+                 // Capitalize the letter
                  ch = static_cast<char>(toupper(ch));
                  if (isalpha(ch)) // Only count alphabetic characters
                      // Compute offset into counter vector

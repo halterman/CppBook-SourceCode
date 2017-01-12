@@ -1,7 +1,7 @@
  #include <unordered_map>
  #include "fibonacci.h"
  
- //  Returns the nth Fibonacci number
+ // Returns the nth Fibonacci number
  Integer fibonacci(unsigned n) {
      if (n <= 0)
          return 0;
@@ -12,10 +12,10 @@
  }
  
  
- //  Returns the nth Fibonacci number.  Caches a
- //  recursively computed result to be used when needed
- //  in the future.  Provides a huge performance improvement
- //  over the recursive version. 
+ // Returns the nth Fibonacci number.  Caches a
+ // recursively computed result to be used when needed
+ // in the future.  Provides a huge performance improvement
+ // over the recursive version. 
  Integer fibonacci2(unsigned n) {
      // ans is a map for caching the results of the fibonacci2 function.
      // Declared static so it persists between function calls.

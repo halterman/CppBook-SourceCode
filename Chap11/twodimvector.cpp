@@ -4,7 +4,7 @@
  
  using Matrix = std::vector<std::vector<double>>;
  
- //  Allow the user to enter the elements of a matrix
+ // Allow the user to enter the elements of a matrix
  void populate_matrix(Matrix& m) {
      std::cout << "Enter the " << m.size() << " rows of the matrix.\n";
      for (unsigned row = 0; row < m.size(); row++) {
@@ -29,11 +29,11 @@
      std::cin >> rows;
      std::cout << "How many columns? ";
      std::cin >> columns;
-     //  Declare the 2D vector
+     // Declare the 2D vector
      Matrix mat(rows, std::vector<double>(columns));  
-     //  Populate the vector
+     // Populate the vector
      populate_matrix(mat);
-     //  Print the vector
+     // Print the vector
      print_matrix(mat);
  }
 

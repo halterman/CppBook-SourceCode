@@ -2,7 +2,7 @@
  #include <vector>
  #include <iostream>
  
- //  Base class for all Text derived classes
+ // Base class for all Text derived classes
  class Text {
      std::string text;
  public:
@@ -12,7 +12,7 @@
      }
  };
  
- //  Provides minimal decoration for the text
+ // Provides minimal decoration for the text
  class FancyText: public Text {
      std::string left_bracket;
      std::string right_bracket;
@@ -27,7 +27,7 @@
      }
  };
  
- //  The text is always the word FIXED
+ // The text is always the word FIXED
  class FixedText: public Text {
  public:
      FixedText(): Text("FIXED") {}

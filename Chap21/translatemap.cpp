@@ -13,7 +13,7 @@
  // Load the list of words from a file
  void load_words(std::string filename, Dictionary& words) {
      std::ifstream in(filename);
-     if (in.good()) {  //  Make sure the file was opened properly
+     if (in.good()) {  // Make sure the file was opened properly
          std::string english_word, spanish_word;
          while (in >> spanish_word >> english_word) // Read until end of file
              words[spanish_word] = english_word;

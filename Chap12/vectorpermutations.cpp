@@ -10,9 +10,9 @@
      int n = a.size();
      std::cout << "{";
      if (n > 0) {
-         std::cout << a[0];  //  Print the first element
+         std::cout << a[0];  // Print the first element
          for (int i = 1; i < n; i++)
-             std::cout << ',' << a[i];  //  Print the rest
+             std::cout << ',' << a[i];  // Print the rest
      }
      std::cout << "}";
  }
@@ -30,13 +30,13 @@
      }
      else {
          for (int i = begin; i <= end; i++) {
-             //  Interchange the element at the first position
-             //  with the element at position i
+             // Interchange the element at the first position
+             // with the element at position i
              std::swap(a[begin], a[i]);
-             //  Recursively permute the rest of the vector 
+             // Recursively permute the rest of the vector 
              permute(a, begin + 1, end);
-             //  Interchange the current element at the first position
-             //  with the current element at position i
+             // Interchange the current element at the first position
+             // with the current element at position i
              std::swap(a[begin], a[i]);
          }
      }
@@ -46,23 +46,23 @@
   *  Tests the permutation functions
   */
  int main() {
-     //  Get number of values from the user
+     // Get number of values from the user
      std::cout << "Please enter number of values to permute: ";
      int number;
      std::cin >> number;
-     //  Create the vector to hold all the values
+     // Create the vector to hold all the values
      std::vector<int> list(number);
-     //  Initialize the vector
+     // Initialize the vector
      for (int i = 0; i < number; i++)
          list[i] = i;
  
-     //  Print original list
+     // Print original list
      print(list);
      std::cout << "\n----------\n";
-     //  Print all the permutations of list
+     // Print all the permutations of list
      permute(list, 0, number - 1);
      std::cout << "\n----------\n";
-     //  Print list after all the manipulations
+     // Print list after all the manipulations
      print(list);
  }
 

@@ -13,9 +13,9 @@
      int n = a.size();
      std::cout << "{";
      if (n > 0) {
-         std::cout << a[0];  //  Print the first element
+         std::cout << a[0];  // Print the first element
          for (int i = 1; i < n; i++)
-             std::cout << ',' << a[i];  //  Print the rest
+             std::cout << ',' << a[i];  // Print the rest
      }
      std::cout << "}";
  }
@@ -40,8 +40,8 @@
  void permute(std::vector<int>& a) {
      int n = a.size();
      for (int i = 0; i < n - 1; i++) {   
-         //  Select a pseudorandom location from the current
-         //  location to the end of the collection
+         // Select a pseudorandom location from the current
+         // location to the end of the collection
          std::swap(a[i], a[random(i, n)]);
      }
  }
@@ -50,7 +50,7 @@
  void faulty_permute(std::vector<int>& a) {
      int n = a.size();
      for (int i = 0; i < n; i++) {   
-         //  Select a pseudorandom position somewhere in the collection
+         // Select a pseudorandom position somewhere in the collection
          std::swap(a[i], a[random(0, n)]);
      }
  }
@@ -89,7 +89,7 @@
  }
  
  int main() {
-     //  Initialize random generator seed
+     // Initialize random generator seed
      srand(static_cast<int>(time(0)));
  
      // permutation_tally vector keeps track of each permutation pattern
@@ -107,31 +107,31 @@
      // working holds a copy of original is gets permuted and tallied
      std::vector<int> working;
  
-     //  Run each permutation one million times
+     // Run each permutation one million times
      const int RUNS = 1000000;
  
      std::cout << "--- Random permute #1 -----\n";
      clear(permutation_tally);
-     for (int i = 0; i < RUNS; i++) { //  Run 1,000,000 times
-         //  Make a copy of the original vector
+     for (int i = 0; i < RUNS; i++) { // Run 1,000,000 times
+         // Make a copy of the original vector
          working = original;  
-         //  Permute the vector with the first algorithm
+         // Permute the vector with the first algorithm
          permute(working);
-         //  Count this permutation
+         // Count this permutation
          permutation_tally[classify(working)]++;
      }
-     report(permutation_tally);   //  Report results
+     report(permutation_tally);   // Report results
  
      std::cout << "--- Random permute #2 -----\n";
      clear(permutation_tally);
-     for (int i = 0; i < RUNS; i++) { //  Run 1,000,000 times
-         //  Make a copy of the original vector
+     for (int i = 0; i < RUNS; i++) { // Run 1,000,000 times
+         // Make a copy of the original vector
          working = original;  
-         //  Permute the vector with the second algorithm
+         // Permute the vector with the second algorithm
          faulty_permute(working);
-         //  Count this permutation
+         // Count this permutation
          permutation_tally[classify(working)]++;
      }
-     report(permutation_tally);   //  Report results
+     report(permutation_tally);   // Report results
  }
 

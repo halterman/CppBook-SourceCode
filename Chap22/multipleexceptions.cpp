@@ -17,13 +17,13 @@
   
  int main() {
      std::vector<int> a { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12 };
-     try {  //  What possibly could go wrong?
+     try {  // What possibly could go wrong?
          int n = a.size();
          std::cout << "Enter index in the range 0..." << n - 1 << ": ";
-         //  Will user enter a valid integer value?
+         // Will user enter a valid integer value?
          int i = get_int();
          std::cout << "Index entered: " << i << '\n';
-         //  Will the user's index be in the range of valid indices?
+         // Will the user's index be in the range of valid indices?
          std::cout << "a[" << i << "] = " << a.at(i) << '\n';
      }
      catch (std::out_of_range&)  {
@@ -32,7 +32,7 @@
      catch (std::invalid_argument&) {
          std::cout << "Index provided is not an integer\n";
      }
-     catch (...) {  //  What have we forgotten?
+     catch (...) {  // What have we forgotten?
          std::cout << "Unknown error\n";
      }
  }
