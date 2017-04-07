@@ -2,20 +2,20 @@
  #include "trafficlight.h"
  
  void print(Trafficlight lt) {
-     Trafficlight::SignalColor color = lt.get_color();
+     SignalColor color = lt.get_color();
      std::cout << "+-----+\n";
      std::cout << "|     |\n";
-     if (color == Trafficlight::Red)
+     if (color == SignalColor::Red)
          std::cout << "| (R) |\n";
      else
          std::cout << "| ( ) |\n";
      std::cout << "|     |\n";
-     if (color == Trafficlight::Yellow)
+     if (color == SignalColor::Yellow)
          std::cout << "| (Y) |\n";
      else
          std::cout << "| ( ) |\n";
      std::cout << "|     |\n";
-     if (color == Trafficlight::Green)
+     if (color == SignalColor::Green)
          std::cout << "| (G) |\n";
      else
          std::cout << "| ( ) |\n";
@@ -24,7 +24,7 @@
  }
  
  int main() {
-     Trafficlight light(Trafficlight::Green);
+     Trafficlight light(SignalColor::Green);
      while (true) {
          print(light);
          light.change();

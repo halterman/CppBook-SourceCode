@@ -1,7 +1,6 @@
+ enum class SignalColor { Red, Green, Yellow };
+
  class Trafficlight {
- public:
-     // Class constants available to clients
-     enum SignalColor { Red, Green, Yellow };
  private:
      SignalColor color;  // The light's current color: Red, Green, or Yellow
  public:

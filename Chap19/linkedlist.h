@@ -62,9 +62,8 @@
          std::swap(head, temp.head);
          std::swap(tail, temp.tail);
          std::swap(len, temp.len);
-         // The temporary list now points to this list's original contents, 
+         // The other list now points to this list's original contents, 
          // and this list now points to the copy of other's list
-         // The temporary list will be destroyed since it is a temporary 
          return *this;
      }
 
@@ -144,6 +143,12 @@
  
      // Removes all the elements in the linked list.
      void clear() {
+         auto cursor = head;
+         while (cursor) {
+             auto temp = cursor;     // Remember where we are
+             cursor = cursor->next;  // Move next node
+             temp->next = nullptr;   // Sever link from previous node
+         }
          head = tail = nullptr;  // Null head signifies list is empty
          len = 0;
      }

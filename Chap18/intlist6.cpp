@@ -96,6 +96,12 @@
  
  // Removes all the elements in the linked list.
  void IntList6::clear() {
+     auto cursor = head;
+     while (cursor) {
+         auto temp = cursor;     // Remember where we are
+         cursor = cursor->next;  // Move next node
+         temp->next = nullptr;   // Sever link from previous node
+     }
      head = tail = nullptr;  // Null head signifies list is empty
      len = 0;
  }

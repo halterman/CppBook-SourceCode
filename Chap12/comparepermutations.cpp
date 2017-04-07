@@ -104,7 +104,7 @@
      // original always holds the vector {1,2,3}
      const std::vector<int> original { 1, 2, 3 };
  
-     // working holds a copy of original is gets permuted and tallied
+     // working holds a copy of original that gets permuted and tallied
      std::vector<int> working;
  
      // Run each permutation one million times
